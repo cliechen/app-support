@@ -79,7 +79,7 @@
 <li>Private Vault: Encrypted photos and passcode (stored locally, never transmitted).</li>
 <li>Animal Pop: Game progress and level data (stored locally in UserDefaults using reason CA92.1).</li>
 <li>DayVault: Calendar events, journal entries, custom event types, and period cycle data (stored locally in the document directory).</li>
-<li>PopCritters: Game progress, level data, booster inventory, and user preferences (stored locally in UserDefaults using reason CA92.1).</li>
+<li>PopCritters: game progress, level unlocks and star ratings, coin balance, booster inventory, achievements, login streak, daily mission and daily deal state, the selected theme, sound, music, haptics and accessibility preferences, and an in-app activity log of up to 500 recent gameplay and ad events (stored locally in UserDefaults using reason CA92.1).</li>
 </ul>
 <p>All locally stored data is removed when you delete the app from your device. We do not keep server-side copies of it.</p>
 <h2>Advertising and Third-Party Services</h2>
@@ -90,7 +90,7 @@
 <li>when you tap a payment link, TabCaddy hands the recipient's Venmo username, the amount per person and your optional note to Venmo or Cash App, which then apply their own privacy policies.</li>
 </ul>
 <p>TabCaddy never reads your Venmo credentials, contacts, or payment history.</p>
-<p><strong>PopCritters</strong> shows a single opted-in rewarded video when a booster runs out. There are no banners and no interstitials, and no ad is shown unless the player taps the "Watch Ad" button. Ads are requested only after Google's UMP consent tool has recorded the player's choice for their region; where consent is required, no ad is requested before that choice is made. PopCritters does not request App Tracking Transparency permission and does not use the IDFA, so Google cannot use it to track you across other apps or websites.</p>
+<p><strong>PopCritters</strong> shows a single opted-in rewarded video for its "empty booster" offer, which appears in a level or in the Booster Backpack when you run out of a booster. There are no banners and no interstitials in this version, and no ad is shown unless you tap the "Watch Ad" button. Ads are requested only after Google's UMP consent tool has recorded your choice for your region; where consent is required, no ad is requested before that choice is made. PopCritters does not request App Tracking Transparency permission and does not use the IDFA, so Google cannot use it to track you across other apps or websites.</p>
 <p><strong>TabCaddy</strong> shows banner and occasional interstitial ads. TabCaddy asks for App Tracking Transparency permission before any tracking identifier is requested; if you decline, only non-personalized ads are shown.</p>
 <p>The Google Mobile Ads SDK may process the following data when serving or measuring ads:</p>
 <ul>
@@ -100,9 +100,9 @@
 <li>Product interaction — ad-related actions inside the app.</li>
 </ul>
 <p>This data is not linked to your name, email, or account: our apps have no account system. If you allow App Tracking Transparency, the advertising identifier may be used by Google to measure and personalize ads across other companies' apps and websites. If you decline, no tracking identifier is used and only non-personalized ads are requested. We never sell this data.</p>
-<p>The Google Mobile Ads SDK may also report crash, performance and other diagnostic data to Google while it serves or measures ads. That diagnostic data is not linked to your identity and is not used to track you.</p>
+<p>The Google Mobile Ads SDK may also report crash, performance and other diagnostic data to Google while it serves or measures ads. That diagnostic data is not linked to your identity and is not used to track you. Each app's privacy manifest and App Store privacy answers list exactly which of those data types its own ad integration uses. <strong>PopCritters</strong> additionally reads performance and crash or hang summaries from Apple's MetricKit; they stay on your device and are never sent to a PopCritters server.</p>
 
-<p>You can review or change your ad consent at any time inside the app: <strong>Settings → Privacy & Advertising → Ad Privacy Options</strong> (shown where your region requires a consent choice). Where required, Google's UMP consent form is shown on first launch and can be reopened from that screen.</p>
+<p>You can review or change your ad consent at any time inside the app. In <strong>TabCaddy</strong>: <strong>Settings → Privacy &amp; Advertising → Ad Privacy Options</strong>. In <strong>PopCritters</strong>: <strong>Settings → Privacy &amp; Ads → Ad Privacy Choices</strong>. Both entries appear only where your region requires a consent choice, and where required, Google's UMP consent form is shown on first launch and can be reopened from those screens.</p>
 <p>For more information about how Google handles this data:</p>
 <ul>
 <li>Google Privacy Policy: https://policies.google.com/privacy</li>

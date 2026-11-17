@@ -25,6 +25,11 @@
             color: #6e6e73;
             margin-bottom: 40px;
         }
+        .section-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 40px 0 16px;
+        }
         .app-list { display: flex; flex-direction: column; gap: 16px; }
         .app-card {
             background: #fff;
@@ -72,13 +77,13 @@
 
 <div class="app-card">
                 <h2>🐾 PopCritters</h2>
-                <p>A SwiftUI + SpriteKit casual puzzle game for iOS 16+. Clear connected groups of matching critters, build score combos, complete level objectives, and collect stars across a 100-level campaign. Features boosters, achievements, and a Daily Hub with seeded puzzles. Free to play with rewarded video ads; an internet connection is required to load ads, while core gameplay works offline.</p>
-                <p>Need help? Check our <a href="privacy">Privacy Policy</a> or contact us below.</p>
+                <p>A SwiftUI + SpriteKit casual puzzle game for iOS 16+. Clear connected groups of matching critters, build score combos, complete level objectives, and collect stars across a 100-level campaign. Features boosters and the Booster Backpack, achievements, a daily login streak, and a Daily Challenge Hub that gives every player the same seeded puzzle and three rotating missions each day. Free to play with rewarded video ads; an internet connection is required to load ads, while core gameplay works offline.</p>
+                <p>Need help? Read the <a href="#popcritters-faq">PopCritters FAQ</a>, check our <a href="privacy">Privacy Policy</a>, or contact us below.</p>
             </div>
             <div class="app-card">
                 <h2>🧾 TabCaddy: Tip &amp; Bill Splitter</h2>
-                <p>A fast, frictionless dining bill splitter and tip calculator designed for modern dining. Split checks fairly with itemized drinker isolation (Sober Shield), auto-gratuity detection, junk fee exclusion, birthday VIP absorption, and 1-tap Venmo settlement breakdowns. Penny-perfect math with zero rounding drift. Shows banner and occasional interstitial ads; core calculation works offline. There is no paid ad-removal option.</p>
-                <p>Need help? Check our <a href="privacy">Privacy Policy</a> or contact us below.</p>
+                <p>A fast, frictionless dining bill splitter and tip calculator for iOS 17+. Split checks fairly with itemized drinker isolation (Sober Shield), auto-gratuity detection, junk fee exclusion, birthday VIP absorption, and 1-tap Venmo or Cash App settlement breakdowns. Penny-perfect math with zero rounding drift, shareable receipt images, and a local history of your last 30 checks. Shows banner and occasional interstitial ads; core calculation works offline. There is no paid ad-removal option and no account is required.</p>
+                <p>Need help? Read the <a href="#tabcaddy-faq">TabCaddy FAQ</a>, check our <a href="privacy">Privacy Policy</a>, or contact us below.</p>
                         </div>
 
             <div class="app-card">
@@ -124,22 +129,30 @@
             </div>
         </div>
 
+        <h2 class="section-title">Help &amp; FAQ</h2>
+        <div class="app-list">
 
-        <div class="app-card">
-            <h2>❓ PopCritters FAQ / 常见问题</h2>
-            <p><strong>Reward not received after watching ad?</strong> Rewards are usually credited right after you close the ad page. If not, the pending reward will be credited on the next launch.<br><br><strong>广告看完没到账？</strong> 奖励通常在关闭广告页面后立即入账。若未到账，请重新进入游戏，进度会在下次启动时自动补记。</p>
-            <p><strong>Ad failed to load?</strong> Make sure your device is connected to the internet. Core gameplay works offline; only loading rewarded video ads requires network.<br><br><strong>广告加载失败？</strong> 确保设备已联网。核心玩法不需要联网，仅加载激励视频广告需要网络。</p>
-            <p><strong>Progress lost?</strong> Game progress is stored locally only. Deleting the app will clear progress; please do not uninstall without a system-level backup (iCloud or Finder).<br><br><strong>进度丢失？</strong> 游戏进度仅本地保存。删除应用会清除进度，请勿在未备份前卸载。</p>
-            <p>More help: <a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a> · 更多帮助：<a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a></p>
+            <div class="app-card" id="popcritters-faq">
+                <h2>❓ PopCritters FAQ / 常见问题</h2>
+                <p><strong>Reward not received after watching ad?</strong> Rewards are usually credited right after you close the ad page. If not, the pending reward will be credited on the next launch.<br><br><strong>广告看完没到账？</strong> 奖励通常在关闭广告页面后立即入账。若未到账，请重新进入游戏，进度会在下次启动时自动补记。</p>
+                <p><strong>Ad failed to load?</strong> Make sure your device is connected to the internet. Core gameplay works offline; only loading rewarded video ads requires network.<br><br><strong>广告加载失败？</strong> 确保设备已联网。核心玩法不需要联网，仅加载激励视频广告需要网络。</p>
+                <p><strong>How do I change my ad privacy choice?</strong> Open Settings → Privacy &amp; Ads → Ad Privacy Choices (shown where your region requires a consent choice) to review or change Google's UMP consent form. Where consent is required and not yet given, no ad is requested.<br><br><strong>如何更改广告隐私选择？</strong> 打开 Settings → Privacy &amp; Ads → Ad Privacy Choices（仅在需要同意选择的地区显示），即可查看或更改 Google UMP 同意表单；在需要同意但尚未同意时，不会请求广告。</p>
+                <p><strong>Progress lost?</strong> Game progress is stored locally only. Deleting the app will clear progress; please do not uninstall without a system-level backup (iCloud or Finder).<br><br><strong>进度丢失？</strong> 游戏进度仅本地保存。删除应用会清除进度，请勿在未备份前卸载。</p>
+                <p>More help: <a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a> · 更多帮助：<a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a></p>
+            </div>
+
+            <div class="app-card" id="tabcaddy-faq">
+                <h2>❓ TabCaddy FAQ / 常见问题</h2>
+                <p><strong>Does TabCaddy work offline?</strong> Yes — bill splitting, receipt rendering, and all data entry work fully offline. Only ads, the Venmo username check, and opening a payment link need network access.<br><br><strong>TabCaddy 能离线使用吗？</strong> 能——账单分摊、小票渲染和所有数据输入都能完全离线工作。只有广告、Venmo 用户名校验以及打开支付链接需要联网。</p>
+                <p><strong>What if Venmo isn’t installed on my device?</strong> You can still use TabCaddy fully. The Venmo link is optional; tap it to open a pre-filled payment message, or copy the settlement text to share any other way.<br><br><strong>如果设备上没装 Venmo 怎么办？</strong> 依然可以完整使用 TabCaddy。Venmo 链接是可选的；点击它可以打开预填好的付款信息，也可以复制结算文本用任意方式分享。</p>
+                <p><strong>How do I clear old check history?</strong> Delete checks one by one in the history list, or tap the trash button at the top right of the Past Checks screen and confirm “Clear All Past Checks” to remove every saved check at once.<br><br><strong>如何清除历史账单？</strong> 可以在历史列表中逐条删除；也可以点击 Past Checks 页右上角的垃圾桶按钮，确认“Clear All Past Checks”一次性清空全部记录。</p>
+                <p><strong>Where is my check data stored?</strong> Nowhere but your device. Drafts, saved checks and your Venmo handle stay in local storage (the last 30 checks are kept), and deleting the app removes them. TabCaddy only uses the network for ads, the Venmo username check when you save a handle, and opening a payment link.<br><br><strong>我的账单数据会被上传吗？</strong> 不会。草稿、历史账单和 Venmo 用户名只保存在本机（最多保留 30 条历史），删除 App 即清除。TabCaddy 只在三处联网：广告、保存用户名时的 Venmo 校验、以及打开支付链接。</p>
+                <p>More help: <a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a> · 更多帮助：<a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a></p>
+            </div>
+
         </div>
 
-<div class="app-card">
-            <h2>❓ TabCaddy FAQ / 常见问题</h2>
-            <p><strong>Does TabCaddy work offline?</strong> Yes — bill splitting, receipt rendering, and all data entry work fully offline. Only ads, the Venmo username check, and opening a payment link need network access.<br><br><strong>TabCaddy 能离线使用吗？</strong> 能——账单分摊、小票渲染和所有数据输入都能完全离线工作。只有广告、Venmo 用户名校验以及打开支付链接需要联网。</p>
-            <p><strong>What if Venmo isn’t installed on my device?</strong> You can still use TabCaddy fully. The Venmo link is optional; tap it to open a pre-filled payment message, or copy the settlement text to share any other way.<br><br><strong>如果设备上没装 Venmo 怎么办？</strong> 依然可以完整使用 TabCaddy。Venmo 链接是可选的；点击它可以打开预填好的付款信息，也可以复制结算文本用任意方式分享。</p>
-            <p><strong>How do I clear old check history?</strong> Delete checks one by one in the history list, or tap the trash button at the top right of the Past Checks screen and confirm “Clear All Past Checks” to remove every saved check at once.<br><br><strong>如何清除历史账单？</strong> 可以在历史列表中逐条删除；也可以点击 Past Checks 页右上角的垃圾桶按钮，确认“Clear All Past Checks”一次性清空全部记录。</p>
-            <p>More help: <a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a> · 更多帮助：<a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a></p>
-        </div><div class="contact">
+        <div class="contact">
             <h3>📧 Contact Us</h3>
             <p>If you have any questions or need assistance, please email us at:<br>
             <a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a></p>
