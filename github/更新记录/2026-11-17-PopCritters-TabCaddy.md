@@ -46,8 +46,9 @@
 | 16:42 | `b5d5aa8` | **页面标题改为 PopCritters 优先；数据披露同步** |
 | 16:48 | `52fb310` | **第三方共享段落对齐 Cash App 载荷** |
 | 20:35 | `0d443ea` | **中立化主标题，兼容 PopCritters 与 TabCaddy 审核** |
+| 22:08 | `25c7cee` | **全面完善：Dark Mode、双向导航、App 深层锚点、超链接激活、Favicon 与元数据** |
 
-加粗三条为本轮（页面复查与双 App 提审合规）产生的提交。
+加粗四条为本轮（页面复查、双 App 提审合规与体验完善）产生的提交。
 
 ---
 
@@ -90,6 +91,14 @@
 - `docs/index.html`：`<title>` 改为 `App Support | PopCritters &amp; TabCaddy`；`<h1>` 改为 `App Support`。
 - `docs/privacy.html`：`<title>` 改为 `Privacy Policy | PopCritters &amp; TabCaddy`；`<h1>` 改为 `Privacy Policy`。
 - 依据与原因：苹果审核员对 Support URL (Guideline 1.5) 和 Privacy Policy URL (Guideline 5.1.1) 审查极为机械。若主标题仅标注单一 App（PopCritters），TabCaddy 审核时极易被审核员误认为链接与提交应用不符而遭到拒审（Metadata Rejected）。中立化 `<h1>` 并将 `<title>` 明确设置为 `PopCritters & TabCaddy`，既能消除 TabCaddy 的误判风险，又能确保两款 App 在审核时在标签页与首屏完全可见。
+
+### 3.7 全面体验与规范完善（Dark Mode、双向导航、超链接、深层锚点、元数据）
+
+- **激活超链接**：将隐私页原纯文本的 Google 三大政策链接包裹为带有 `target="_blank" rel="noopener noreferrer"` 的标准超链接，联系邮箱包裹为 `mailto:cliechen@gmail.com`。
+- **双向轻量导航**：在两页顶部增加 `App Support` / `Privacy Policy` 导航条，增加 `#top` 锚点，底部增加“Back to top”及统一的版权与最后更新时间标注。
+- **适配原生深色模式（Dark Mode）**：增加 `@media (prefers-color-scheme: dark)`，在 iOS / macOS 深色模式下自动适配系统原生深灰色调（背景 `#000000`，卡片 `#1c1c1e`，字体 `#f5f5f7`），提升审核员与用户的视觉质感。
+- **App 专属深层锚点**：在隐私页为 PopCritters 和 TabCaddy 分别增加 `#popcritters`、`#tabcaddy`、`#popcritters-storage`、`#tabcaddy-storage`、`#popcritters-ads`、`#tabcaddy-ads` 锚点，支持外部直达具体 App 条款。
+- **Favicon 与元数据规范**：添加轻量 SVG Data URI 图标（📱 / 🛡️）、`<meta name="description">` 以及 `<meta name="format-detection" content="telephone=no">`（防止 iOS Safari 误将金额或分摊数字高亮为电话号码）。
 
 ---
 
