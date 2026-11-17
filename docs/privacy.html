@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for PopCritters, TabCaddy, and other iOS apps developed by cliechen.">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
     <title>Privacy Policy | PopCritters &amp; TabCaddy</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,6 +17,19 @@
             padding: 40px 20px;
         }
         .container { max-width: 720px; margin: 0 auto; }
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 28px;
+            font-size: 0.95em;
+        }
+        .nav a { color: #007aff; text-decoration: none; font-weight: 500; }
+        .nav a:hover { text-decoration: underline; }
+        .nav .active { color: #1d1d1f; font-weight: 600; }
+        .nav .sep { color: #8e8e93; }
+        a { color: #007aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
         h1 {
             font-size: 2em;
             font-weight: 700;
@@ -29,7 +45,7 @@
             font-weight: 600;
             margin: 28px 0 12px;
         }
-        p {  margin-bottom: 16px; color: #3a3a3c; }
+        p { margin-bottom: 16px; color: #3a3a3c; }
         ul { margin: 0 0 16px 24px; color: #3a3a3c; }
         li { margin-bottom: 6px; }
         .app-list {
@@ -40,19 +56,43 @@
             border: 1px solid rgba(0,0,0,0.04);
         }
         .app-list li { list-style: none; padding: 6px 0; }
-        .back { margin-top: 40px; }
-        .back a { color: #007aff; text-decoration: none; }
-        .back a:hover { text-decoration: underline; }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #86868b;
+        }
+        .footer a { color: #007aff; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #000000; color: #f5f5f7; }
+            h1, h2 { color: #f5f5f7; }
+            .last-updated, p, ul, .footer { color: #98989d; }
+            .app-list {
+                background: #1c1c1e;
+                border-color: rgba(255, 255, 255, 0.08);
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            }
+            .nav .active { color: #f5f5f7; }
+            .nav .sep { color: #636366; }
+            .nav a, .footer a, a { color: #2997ff; }
+        }
     </style>
 </head>
 <body>
-<div class="container">
+<div class="container" id="top">
+    <nav class="nav">
+        <a href="https://cliechen.github.io/app-support/">App Support</a>
+        <span class="sep">/</span>
+        <span class="active">Privacy Policy</span>
+    </nav>
     <h1>Privacy Policy</h1>
-<p>Effective: November 17, 2026</p>
+<p class="last-updated">Effective: November 17, 2026</p>
 <p>This privacy policy applies to the following iOS applications developed by cliechen ("we", "our", or "us"):</p>
 <ul>
-<li>PopCritters (com.cliechen.PopCritters)</li>
-<li>TabCaddy (com.cliechen.TabCaddy)</li>
+<li id="popcritters">PopCritters (com.cliechen.PopCritters)</li>
+<li id="tabcaddy">TabCaddy (com.cliechen.TabCaddy)</li>
 <li>CremaShuffle (com.cliechen.CremaShuffle)</li>
 <li>HanVault (com.cliechen.HanVault)</li>
 <li>DiceTrove (com.cliechen.DiceTrove)</li>
@@ -71,8 +111,8 @@
 <h2>Local Data Storage</h2>
 <p>The following app data is stored locally on your device only, using iOS UserDefaults or the app's document directory:</p>
 <ul>
-<li>PopCritters: game progress, level unlocks and star ratings, coin balance, booster inventory, achievements, login streak, daily challenge, daily mission and Mystery Chest state, daily deal state, the selected theme, sound, music, haptics and accessibility preferences, an in-progress level session, the local ad-reward ledger (which rewarded offer was credited and when), and an in-app activity log of up to 500 recent gameplay and ad events (stored locally in UserDefaults using reason CA92.1).</li>
-<li>TabCaddy: your preferences (tip presets, pre-tax default, Zen rounding, haptics and sound, settlement style), your Venmo username if you save one, venue and table labels, party size and diner names, the in-progress check draft, and a local history of up to 30 completed checks (venue, table label, totals, per-person amounts and the settlement text). All of it is stored locally in UserDefaults using reason CA92.1.</li>
+<li id="popcritters-storage">PopCritters: game progress, level unlocks and star ratings, coin balance, booster inventory, achievements, login streak, daily challenge, daily mission and Mystery Chest state, daily deal state, the selected theme, sound, music, haptics and accessibility preferences, an in-progress level session, the local ad-reward ledger (which rewarded offer was credited and when), and an in-app activity log of up to 500 recent gameplay and ad events (stored locally in UserDefaults using reason CA92.1).</li>
+<li id="tabcaddy-storage">TabCaddy: your preferences (tip presets, pre-tax default, Zen rounding, haptics and sound, settlement style), your Venmo username if you save one, venue and table labels, party size and diner names, the in-progress check draft, and a local history of up to 30 completed checks (venue, table label, totals, per-person amounts and the settlement text). All of it is stored locally in UserDefaults using reason CA92.1.</li>
 <li>CremaShuffle: Best score, unlocked achievements, effect settings, music/SFX preferences, and tutorial status (stored locally in UserDefaults using reason CA92.1).</li>
 <li>HanVault: Learning progress, SRS review records, bookmarked words, daily mission state, and study statistics (stored locally in UserDefaults using reason CA92.1).</li>
 <li>DiceTrove: Roll history (stored locally in UserDefaults using reason CA92.1).</li>
@@ -90,8 +130,8 @@
 <li>when you tap a payment link, TabCaddy hands the recipient's username and the amount per person to Venmo or Cash App — together with your optional note when the link goes to Venmo — and those services then apply their own privacy policies.</li>
 </ul>
 <p>TabCaddy never reads your Venmo credentials, contacts, or payment history.</p>
-<p><strong>PopCritters</strong> shows a single opted-in rewarded video for its "empty booster" offer, which appears in a level or in the Booster Backpack when you run out of a booster. There are no banners and no interstitials in this version, and no ad is shown unless you tap the "Watch Ad" button. Ads are requested only after Google's UMP consent tool reports that ads may be requested for your region (after you answer its consent form where one is required); where consent is required and not yet given, no ad is requested. PopCritters does not request App Tracking Transparency permission and does not use the IDFA, so Google cannot use it to track you across other apps or websites.</p>
-<p><strong>TabCaddy</strong> shows banner and occasional interstitial ads. TabCaddy asks for App Tracking Transparency permission before any tracking identifier is requested; if you decline, only non-personalized ads are shown.</p>
+<p id="popcritters-ads"><strong>PopCritters</strong> shows a single opted-in rewarded video for its "empty booster" offer, which appears in a level or in the Booster Backpack when you run out of a booster. There are no banners and no interstitials in this version, and no ad is shown unless you tap the "Watch Ad" button. Ads are requested only after Google's UMP consent tool reports that ads may be requested for your region (after you answer its consent form where one is required); where consent is required and not yet given, no ad is requested. PopCritters does not request App Tracking Transparency permission and does not use the IDFA, so Google cannot use it to track you across other apps or websites.</p>
+<p id="tabcaddy-ads"><strong>TabCaddy</strong> shows banner and occasional interstitial ads. TabCaddy asks for App Tracking Transparency permission before any tracking identifier is requested; if you decline, only non-personalized ads are shown.</p>
 <p>The Google Mobile Ads SDK may process the following data when serving or measuring ads:</p>
 <ul>
 <li>Advertising data — which ad was requested, shown, or tapped.</li>
@@ -105,9 +145,9 @@
 <p>You can review or change your ad consent at any time inside the app. In <strong>TabCaddy</strong>: <strong>Settings → Privacy &amp; Advertising → Ad Privacy Options</strong>. In <strong>PopCritters</strong>: <strong>Settings → Privacy &amp; Ads → Ad Privacy Choices</strong>. Both entries appear only where your region requires a consent choice, and where required, Google's UMP consent form is shown on first launch and can be reopened from those screens.</p>
 <p>For more information about how Google handles this data:</p>
 <ul>
-<li>Google Privacy Policy: https://policies.google.com/privacy</li>
-<li>How Google uses information from sites or apps that use its services: https://policies.google.com/technologies/partner-sites</li>
-<li>Google advertising technologies: https://policies.google.com/technologies/ads</li>
+<li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+<li>How Google uses information from sites or apps that use its services: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a></li>
+<li>Google advertising technologies: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></li>
 </ul>
 <h2>Encryption</h2>
 <p>Private Vault uses AES-GCM encryption via Apple's CryptoKit to encrypt all photos stored in the vault. The encryption key is derived from your passcode and never leaves your device. No one — including us — can access your encrypted photos without your passcode.</p>
@@ -120,7 +160,12 @@
 <h2>Changes to This Policy</h2>
 <p>We may update this privacy policy from time to time. Changes are posted on this page with an updated effective date.</p>
 <h2>Contact Us</h2>
-<p>If you have any questions about this privacy policy or want to exercise a data-related request, please contact us at cliechen@gmail.com. For app help, see our <a href="https://cliechen.github.io/app-support/">support page</a>.</p>
+<p>If you have any questions about this privacy policy or want to exercise a data-related request, please contact us at <a href="mailto:cliechen@gmail.com">cliechen@gmail.com</a>. For app help, see our <a href="https://cliechen.github.io/app-support/">support page</a>.</p>
+
+<div class="footer">
+    <p><a href="https://cliechen.github.io/app-support/">App Support</a> · <a href="#top">Back to top</a></p>
+    <p style="margin-top:8px;">Effective: November 17, 2026 · &copy; 2026 cliechen. All rights reserved.</p>
+</div>
 
 </div>
 </body>
