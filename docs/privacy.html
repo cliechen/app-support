@@ -70,7 +70,7 @@
 <h2>Local Data Storage</h2>
 <p>The following app data is stored locally on your device only, using iOS UserDefaults or the app's document directory:</p>
 <ul>
-<li>TabCaddy: User preferences, tip percentages, custom diner names, and settlement drafts (stored locally in UserDefaults using reason CA92.1).</li>
+<li>TabCaddy: your preferences (tip presets, pre-tax default, Zen rounding, haptics and sound, settlement style), your Venmo username if you save one, venue and table labels, party size and diner names, the in-progress check draft, and a local history of up to 30 completed checks (venue, table label, totals, per-person amounts and the settlement text). All of it is stored locally in UserDefaults using reason CA92.1.</li>
 <li>CremaShuffle: Best score, unlocked achievements, effect settings, music/SFX preferences, and tutorial status (stored locally in UserDefaults using reason CA92.1).</li>
 <li>HanVault: Learning progress, SRS review records, bookmarked words, daily mission state, and study statistics (stored locally in UserDefaults using reason CA92.1).</li>
 <li>DiceTrove: Roll history (stored locally in UserDefaults using reason CA92.1).</li>
@@ -82,7 +82,13 @@
 </ul>
 <p>All locally stored data is removed when you delete the app from your device. We do not keep server-side copies of it.</p>
 <h2>Advertising and Third-Party Services</h2>
-<p>Our games are free to play and supported by advertising. Core gameplay and local data stay on your device; an internet connection is used only to load and display ads.</p>
+<p>Our apps are free to use and supported by advertising. Core calculation and game logic, and all data you enter, stay on your device. TabCaddy uses the network in three cases only:</p>
+<ul>
+<li>to request and display ads;</li>
+<li>when you type a Venmo username in Settings, TabCaddy requests that public profile page once to confirm the username exists;</li>
+<li>when you tap a payment link, TabCaddy hands the recipient's Venmo username, the amount per person and your optional note to Venmo or Cash App, which then apply their own privacy policies.</li>
+</ul>
+<p>TabCaddy never reads your Venmo credentials, contacts, or payment history.</p>
 <p><strong>PopCritters</strong> shows a single opted-in rewarded video when a booster runs out. There are no banners and no interstitials, and no ad is shown unless the player taps the "Watch Ad" button. Ads are requested only after Google's UMP consent tool has recorded the player's choice for their region; where consent is required, no ad is requested before that choice is made. PopCritters does not request App Tracking Transparency permission and does not use the IDFA, so Google cannot use it to track you across other apps or websites.</p>
 <p><strong>TabCaddy</strong> shows banner and occasional interstitial ads. TabCaddy asks for App Tracking Transparency permission before any tracking identifier is requested; if you decline, only non-personalized ads are shown.</p>
 <p>The Google Mobile Ads SDK may process the following data when serving or measuring ads:</p>
@@ -92,8 +98,10 @@
 <li>Approximate (coarse) location — derived from the network connection, not from GPS permission.</li>
 <li>Product interaction — ad-related actions inside the app.</li>
 </ul>
-<p>None of this data is linked to your identity, none of it is used to track you across apps or websites owned by other companies, and we never sell it. The developer does not receive personally identifiable information from the ads SDK.</p>
-<p>You can review or change your ad consent at any time inside the app: <strong>Settings → Privacy & Ads → Ad Privacy Choices</strong>. Where required, Google's UMP consent form is shown on first launch and can be reopened from that screen.</p>
+<p>This data is not linked to your name, email, or account: our apps have no account system. If you allow App Tracking Transparency, the advertising identifier may be used by Google to measure and personalize ads across other companies' apps and websites. If you decline, no tracking identifier is used and only non-personalized ads are requested. We never sell this data.</p>
+<p>The Google Mobile Ads SDK may also report crash, performance and other diagnostic data to Google while it serves or measures ads. That diagnostic data is not linked to your identity and is not used to track you.</p>
+
+<p>You can review or change your ad consent at any time inside the app: <strong>Settings → Privacy & Advertising → Ad Privacy Options</strong> (shown where your region requires a consent choice). Where required, Google's UMP consent form is shown on first launch and can be reopened from that screen.</p>
 <p>For more information about how Google handles this data:</p>
 <ul>
 <li>Google Privacy Policy: https://policies.google.com/privacy</li>
